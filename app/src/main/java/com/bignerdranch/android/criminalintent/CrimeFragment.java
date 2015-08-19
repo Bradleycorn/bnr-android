@@ -16,7 +16,7 @@ import android.widget.EditText;
 public class CrimeFragment extends Fragment {
 
     private Crime mCrime;
-    private EditText mEditText;
+    private EditText mTitleField;
     private Button mDateButton;
     private CheckBox mSolvedCheckBox;
 
@@ -31,8 +31,8 @@ public class CrimeFragment extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_crime, container, false);
 
-        mEditText = (EditText) v.findViewById(R.id.crime_title);
-        mEditText.addTextChangedListener(new TextWatcher() {
+        mTitleField = (EditText) v.findViewById(R.id.crime_title);
+        mTitleField.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
                 //not used
