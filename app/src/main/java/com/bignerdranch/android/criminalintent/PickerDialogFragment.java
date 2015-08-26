@@ -59,6 +59,4 @@ public abstract class PickerDialogFragment extends DialogFragment {
 
         getTargetFragment().onActivityResult(getTargetRequestCode(), resultCode, intent);
     }
-
-
 }
