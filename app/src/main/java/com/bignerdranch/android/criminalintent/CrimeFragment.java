@@ -106,16 +106,10 @@ public class CrimeFragment extends Fragment {
     @Override
     public void onPause() {
         super.onPause();
-        Log.d(TAG, "Paused");
 
         CrimeLab.get(getActivity()).updateCrime(mCrime);
     }
 
-    @Override
-    public void onStop() {
-        super.onStop();
-        Log.d(TAG, "Stopped");
-    }
 
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
