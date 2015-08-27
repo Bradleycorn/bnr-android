@@ -101,16 +101,10 @@ public class CrimeFragment extends Fragment {
     @Override
     public void onPause() {
         super.onPause();
-        Log.d(TAG, "Paused");
 
         CrimeLab.get(getActivity()).updateCrime(mCrime);
     }
 
-    @Override
-    public void onStop() {
-        super.onStop();
-        Log.d(TAG, "Stopped");
-    }
 
     private void updateDate() {
         mDateButton.setText(mCrime.getDate().toString());
