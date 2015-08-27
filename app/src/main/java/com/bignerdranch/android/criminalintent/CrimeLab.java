@@ -91,4 +91,8 @@ public class CrimeLab {
         mDatabase.update(CrimeTable.NAME, getContentValues(c), CrimeTable.Cols.UUID + " = ?", new String[] {c.getId().toString()});
     }
 
+    public boolean deleteCrime(Crime c) {
+        return mCrimes.remove(c);
+    }
+
 }
