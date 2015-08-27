@@ -40,9 +40,13 @@ public class Crime {
     }
     //endregion
 
-    public Crime() {
-        mId = UUID.randomUUID();
+    public Crime(UUID id) {
+        mId = id;
         mDate = new Date();
+    }
+
+    public Crime() {
+        this(UUID.randomUUID());
     }
 
 
